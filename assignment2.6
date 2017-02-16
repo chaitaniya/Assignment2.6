@@ -1,0 +1,73 @@
+a)import java.util.Scanner;
+
+public class acad {
+	
+public static void main(String args[])
+{
+	StringBuffer sbb = new StringBuffer();
+		StringBuffer sbb1 = new StringBuffer();
+		Scanner sc =new Scanner(System.in);
+		int a = sc.nextInt();
+		int b =sc.nextInt();
+		for (int i = a; i <=b; i++) {
+			if(i%2==0)
+			{
+				sbb.append(i);
+				sbb.append(" ");
+			}
+			else
+			{
+				sbb1.append(i);
+				sbb1.append(" ");
+			}
+		}
+		System.out.println("The even number are");
+		System.out.println(sbb.toString());
+		System.out.println("The odd number are");
+		System.out.println(sbb1.toString());
+	}
+
+}
+
+b)import java.util.Scanner;
+
+public class acad {
+	
+public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Input");
+		int n = sc.nextInt();
+		System.out.println("Output");
+		for (int i = 1; i <=10; i++) {
+			System.out.println(n+"x"+i+"="+i*n);
+			
+		}
+	}
+  }
+c)import java.util.Scanner;
+
+public class acad {
+	public static void sum(int a , int b)
+    {
+         System.out.println(a+b);
+         
+    }
+    public static void  sum(String s ,String s1)  
+    {
+    	String s4 = s+s1;
+         System.out.println(s4);
+    }
+	
+	public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		
+		int e = sc.nextInt();
+		int f = sc.nextInt();
+		String s1 = sc.next();
+		String s2 = sc.next();
+		sum(e,f);//sum with integer type as input
+		sum(s1,s2);//	sum with String type as input
+		}
+	}
